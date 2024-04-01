@@ -10,10 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "flowbite-react": "^0.7.6",
+=======
+    "nuka-carousel": "^7.0.0",
+>>>>>>> 7b60345739d280d4b9d0d7e933b22f9a91030d60
     "react": "^18.2.0",
     "react-background-slider": "^3.0.0-0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
     "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
