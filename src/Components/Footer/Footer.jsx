@@ -1,4 +1,6 @@
 import React from 'react'
+import logo from '../../assets/images/logo.png'
+import { NavLink, Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -7,26 +9,13 @@ function Footer() {
       <div className="container px-4 mx-auto">
         <div className="-mx-4 flex flex-wrap justify-between">
           <div className="px-4 my-4 w-full xl:w-1/5">
-            <a href="/" className="block w-56 mb-10">
-              <svg version="1.1" viewBox="0 0 3368 512" xmlns="http://www.w3.org/2000/svg">
-                <g fill="none" fillRule="evenodd">
-                  <g transform="translate(0 -75)">
-                    <g transform="translate(0 75)">
-                      <rect width="512" height="512" rx="128" fill="#3D5AFE"></rect>
-                      <rect x="149" y="176" width="220" height="220" fill="#fff"></rect>
-                      <circle cx="259" cy="156" r="40" fill="#fff"></circle>
-                      <circle cx="369" cy="286" r="40" fill="#2962FF"></circle>
-                    </g>
-                    <text fill="white" fontFamily="Nunito-Bold, Nunito" fontSize="512" fontWeight="bold">
-                      <tspan x="654" y="518">Tailwindow</tspan>
-                    </text>
-                  </g>
-                </g>
-              </svg>
-            </a>
-            <p className="text-justify">
-              Tailwindow is a collection of UI Components created using Tailwind CSS Framework. The UI Components gives you all of the building blocks you need to build any designs without any annoying opinionated styles you have to fight to override.
+            
+          
+            
+            <p className="text-center text-3xl text-white">
+              Everest Grill
             </p>
+            <img src={logo} alt="Logo" className='w-30 h-30'/>
           </div>
 
           <div className="px-4 my-4 w-full sm:w-auto">
@@ -34,10 +23,13 @@ function Footer() {
               <h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-blue-600">Company</h2>
             </div>
             <ul className="leading-8">
-              <li><a href="#" className="hover:text-blue-400">About Us</a></li>
-              <li><a href="#" className="hover:text-blue-400">Terms &amp; Conditions</a></li>
-              <li><a href="#" className="hover:text-blue-400">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-blue-400">Contact Us</a></li>
+
+              <li>
+              <Link to='about' className='hover:text-blue-400'>About Us</Link>
+              </li>
+              <li>
+              <Link to='about' className='hover:text-blue-400'>Contact Us</Link>
+              </li>
             </ul>
           </div>
           <div className="px-4 my-4 w-full sm:w-auto">
@@ -45,11 +37,11 @@ function Footer() {
               <h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-blue-600">Blog</h2>
             </div>
             <ul className="leading-8">
-              <li><a href="#" className="hover:text-blue-400">Getting Started With HTML and CSS</a></li>
-              <li><a href="#" className="hover:text-blue-400">What Is Flex And When to Use It?</a></li>
-              <li><a href="#" className="hover:text-blue-400">How TailwindCSS Can Help Your Productivity?</a></li>
-              <li><a href="#" className="hover:text-blue-400">5 Tips to Make Responsive Website</a></li>
-              <li><a href="#" className="hover:text-blue-400">See More</a></li>
+              <li><Link to="#" className="hover:text-blue-400">Home</Link></li>
+              <li><Link to="#" className="hover:text-blue-400">About</Link></li>
+              <li><Link to="#" className="hover:text-blue-400">Contact</Link></li>
+              <li><Link to="#" className="hover:text-blue-400">Menu</Link></li>
+              <li><Link to="#" className="hover:text-blue-400">Gallery</Link></li>
             </ul>
           </div>
           <div className="px-4 my-4 w-full sm:w-auto xl:w-1/5">
@@ -89,13 +81,15 @@ function Footer() {
       <div className="container mx-auto px-4">
         <div className="-mx-4 flex flex-wrap justify-between">
           <div className="px-4 w-full text-center sm:w-auto sm:text-left">
-            Copyright © 2020
+            Copyright © 2024  
             
-            Tailwindow. All Rights Reserved.
+            <a href="http://www.ideagen.com.np" target="_blank" rel="noopener noreferrer"
+            className='ideagen' style={{color: '#D00187'}}
+            >&nbsp; ideagen</a>
+
+            . All Rights Reserved.
           </div>
-          <div className="px-4 w-full text-center sm:w-auto sm:text-left">
-            Made with ❤️ by Tailwindow.
-          </div>
+
         </div>
       </div>
     </div>
