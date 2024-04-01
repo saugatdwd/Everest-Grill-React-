@@ -5,8 +5,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
     "node_modules/flowbite-react/lib/esm/**/*.js",
   ],
-  theme: {
-    extend: {},
+   theme: {
+    fontFamily: {
+      display: ["Satisfy", "cursive"],
+    },
   },
   plugins: [
     require("flowbite/plugin"),
