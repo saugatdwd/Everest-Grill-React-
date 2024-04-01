@@ -4,8 +4,9 @@ import underline from '../../assets/images/separator.svg'
 function AboutSec() {
   return (
     <>
-    <div className="md:min-h-screen flex flex-col-reverse md:flex-row items-center gap-5 md:mx-32 mx-5
-     mt-14">
+    <div className='bg-gray-100 pt-14 md:pt-0'>
+    <div className="md:min-h-screen  max-w-[90vw] mx-auto flex flex-col-reverse md:flex-row items-center 
+     ">
     <div className='w-full md:w-2/4'>
         <img src={aboutbanner} alt="about banner" />
     </div>
@@ -17,6 +18,7 @@ function AboutSec() {
         <h1 className=' text-6xl font-bold'>Every Flavor tells a story</h1>
         <p>Nestled amidst the bustling streets of Kathmandu, Nepal, our restaurant offers a culinary journey steeped in tradition and innovation.
              With a cozy ambiance adorned with local artwork and accents, guests are transported to a realm of warmth and hospitality.</p>
+    </div>
     </div>
     </div>
     </>
