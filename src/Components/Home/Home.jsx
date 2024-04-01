@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
+import AboutSec from '../About/AboutSec';
 
 function Home() {
   const slides = [
@@ -42,6 +43,7 @@ function Home() {
   };
 
   return (
+    <>
     <div className='max-w-full h-[90vh] w-full m-auto py-8 px-8 relative group'>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
@@ -67,6 +69,8 @@ function Home() {
         ))}
       </div>
     </div>
+    <AboutSec/>
+    </>
   );
 
 }
