@@ -5,7 +5,6 @@ import { RxDotFilled } from "react-icons/rx";
 
 
 
-
 function Home() {
 
   const slides = [
@@ -51,7 +50,9 @@ function Home() {
   }, [currentIndex]);
 
   return (
+
     <div className="max-w-full h-[780px] w-full m-auto relative group">
+
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="w-full h-full bg-center bg-cover duration-1000 ease-in-out flex items-center justify-center opacity-80 brightness-75"
@@ -71,6 +72,7 @@ function Home() {
       
     </div>
   );
+
 }
 
 export default Home;
