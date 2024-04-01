@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-import { RxDotFilled } from "react-icons/rx";
 
-
-
-
+import React, { useState } from 'react';
+import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
+import { RxDotFilled } from 'react-icons/rx';
+import AboutSec from '../About/AboutSec';
 function Home() {
 
   const slides = [
@@ -42,7 +40,7 @@ function Home() {
     setCurrentIndex(slideIndex);
   };
 
-  useEffect(() => {
+  React.useEffect(() => {
     const autoplay = setInterval(() => {
       nextSlide();
     }, 5000);
@@ -50,6 +48,8 @@ function Home() {
   }, [currentIndex]);
 
   return (
+    <>
+  
 
     <div className="max-w-full h-[780px] w-full m-auto relative group">
 
@@ -71,6 +71,8 @@ function Home() {
       </div>
       
     </div>
+    <AboutSec/>
+    </>
   );
 
 }
