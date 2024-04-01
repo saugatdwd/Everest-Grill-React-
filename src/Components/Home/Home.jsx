@@ -1,14 +1,8 @@
-<<<<<<< HEAD
-import React from 'react'
-import logo from '../../assets/images/logo.jpg'
-import bgimage1 from '../../assets/images/backgroundimage1.jpg'
-import  {Carousel}  from 'flowbite-react'
-=======
+
 import React, { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 
->>>>>>> 7b60345739d280d4b9d0d7e933b22f9a91030d60
 function Home() {
   const slides = [
     {
@@ -48,13 +42,7 @@ function Home() {
   };
 
   return (
-<<<<<<< HEAD
-    <>
-  
-    </>
-  )
-=======
-    <div className='max-w-full h-[780px] w-full m-auto py-8 px-8 relative group'>
+    <div className='max-w-full h-[90vh] w-full m-auto py-8 px-8 relative group'>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
@@ -80,7 +68,7 @@ function Home() {
       </div>
     </div>
   );
->>>>>>> 7b60345739d280d4b9d0d7e933b22f9a91030d60
+
 }
 
 export default Home;
