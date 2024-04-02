@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 import AboutSec from '../About/AboutSec';
+import OurServiceSec from '../OurServiceSec/OurServiceSec';
 function Home() {
 
   const slides = [
@@ -55,9 +56,9 @@ function Home() {
 
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="w-full h-full bg-center bg-cover duration-1000 ease-in-out flex items-center justify-center opacity-80 brightness-75"
+        className="w-full h-full bg-center bg-cover duration-1000 ease-in-out flex items-center justify-center opacity-80 brightness-75 "
       >
-        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white text-9xl text-center font-display brightness-120">
+        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white text-8xl text-center font-satisfy brightness-120">
           {slides[currentIndex].text}
         </div>
       </div>
@@ -72,6 +73,7 @@ function Home() {
       
     </div>
     <AboutSec/>
+    <OurServiceSec/>
     </>
   );
 
