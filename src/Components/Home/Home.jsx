@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 import AboutSec from '../About/AboutSec';
+import MenuSec from '../Menu/MenuSec';
 function Home() {
 
   const slides = [
@@ -72,6 +73,7 @@ function Home() {
       
     </div>
     <AboutSec/>
+    <MenuSec />
     </>
   );
 

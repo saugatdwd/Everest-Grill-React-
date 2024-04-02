@@ -33,7 +33,7 @@ function Header() {
     const [open, setOpen] = useState(false)
    
   return (
-    <div className='shadow-md w-full top-0 left-0 font-sans '>
+    <div className='shadow-md sticky z-10 w-full top-0 left-0 font-sans '>
         <div className='md:flex items-center justify-between bg-gray-900 py-4 px-7'>
             <div>
                 <img className='w-52' src={logo} alt="logo" />
