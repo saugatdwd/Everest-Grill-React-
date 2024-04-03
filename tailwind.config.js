@@ -7,7 +7,7 @@ export default {
   ],
    theme: {
     fontFamily: {
-      display: ["Satisfy", "cursive"],
+      satisfy: ["Satisfy", "cursive"],
     },
   },
   plugins: [
