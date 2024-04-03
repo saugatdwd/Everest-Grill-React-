@@ -18,7 +18,7 @@ function MenuCard({ image, categoryName, ...props }) {
   };
 
   return (
-    <div {...props} style={cardStyle} className=' text-3xl brightness-75 hover:brightness-110 hover:scale-110 rounded-sm duration-500'>
+    <div {...props} style={cardStyle} className=' text-3xl  hover:scale-110 rounded-sm duration-500'>
       {categoryName}
     </div>
   );
