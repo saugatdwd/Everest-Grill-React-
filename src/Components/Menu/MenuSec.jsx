@@ -1,7 +1,7 @@
 import React from 'react'
 import MenuCard from './MenuCard'
 import img from '../../assets/images/dish3.jpeg'
-import backgroundimg from '../../assets/images/blackwhitebg.jpg'
+import backgroundimg from '../../assets/images/menubackground.jpg'
 
 function MenuSec() {
   const cardStyle = {
