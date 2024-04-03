@@ -2,7 +2,9 @@
 import React, { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import AboutSec from '../About/AboutSec';
+import MenuSec from '../Menu/MenuSec';
 import OurServiceSec from '../OurServiceSec/OurServiceSec';
+
 function Home() {
 
   const slides = [
@@ -72,6 +74,8 @@ function Home() {
       
     </div>
     <AboutSec/>
+
+    <MenuSec />
     <OurServiceSec/>
     </>
   );
