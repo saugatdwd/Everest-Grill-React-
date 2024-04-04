@@ -4,6 +4,7 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import AboutSec from '../About/AboutSec';
 import MenuSec from '../Menu/MenuSec';
 import OurServiceSec from '../OurServiceSec/OurServiceSec';
+import Query from '../QuerySec/Query';
 
 function Home() {
 
@@ -53,7 +54,7 @@ function Home() {
     <>
   
 
-    <div className="max-w-full h-[780px] w-full m-auto relative group">
+    <div className="max-w-full h-[100vh] w-full m-auto relative group">
 
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
@@ -77,6 +78,7 @@ function Home() {
 
     <MenuSec />
     <OurServiceSec/>
+    <Query/>
     </>
   );
 
