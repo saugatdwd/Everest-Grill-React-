@@ -2,19 +2,20 @@ import React, { useState } from 'react'
 import logo from '../../assets/images/logo.jpg'
 import { easeInCubic, FlipProvider, useFlip } from 'react-easy-flip'
 import PopupModal from '../Registration/PopupModal';
-import { Modal } from 'flowbite-react';
+import { Link } from 'react-router-dom';
+
 
 
 const NavLinks = [
     {
         id: 1,
         text: "Home",
-        link: "/#"
+        link: ""
     },
     {
         id: 2,
         text: "About us",
-        link: "/#"
+        link: "/aboutpage"
     },
     {
         id: 3,
@@ -60,8 +61,7 @@ function Header() {
 
     <FlipProvider>
 
-            
-      
+
          <div className='shadow-md  z-10 w-full top-0 left-0 font-sans '  data-flip-root-id={flipRootId}>
               <div className='md:flex items-center justify-between bg-gray-900 py-4 px-7'>
                   <div>
@@ -82,7 +82,8 @@ function Header() {
       
               {NavLinks?.map((item, index) => {
                   return (
-                    <div
+                    <Link
+                      to={item.link}
                       onClick={() => selectedTabHandler(item.id)}
                       className="flex-col cursor-pointer text-white hover:text-red-800"
                       key={item.id}
@@ -94,7 +95,7 @@ function Header() {
                       ) : (
                         <div className="non-active-tab bg-transparent w-[100%] h-[4px] bg-red-800 mt-2 " />
                       )}
-                    </div>
+                    </Link>
                   );
                 })}
 
@@ -105,7 +106,10 @@ function Header() {
               
               
         </div>
-<PopupModal visible={showMyModel} onClose={handleOnClose}/>
+        
+        <PopupModal visible={showMyModel} onClose={handleOnClose}/>
+
+      
       
           
          
