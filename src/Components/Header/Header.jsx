@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import logo from '../../assets/images/logo.jpg'
 import { easeInCubic, FlipProvider, useFlip } from 'react-easy-flip'
-// import '../../style.css'
+import PopupModal from '../Registration/PopupModal';
+import { Modal } from 'flowbite-react';
+
 
 const NavLinks = [
     {
@@ -34,6 +36,11 @@ const NavLinks = [
 function Header() {
     const [open, setOpen] = useState(false)
     const [selectedTab, setSelectedTab] = useState("home")
+
+    const [showMyModel,setShowMyModel] = useState(false);
+
+    const handleOnClose = ()=>{setShowMyModel(false)}
+
    
     const selectedTabHandler = (id) => {
         setSelectedTab(id);
@@ -91,47 +98,19 @@ function Header() {
                   );
                 })}
 
-                  <button className=' md:hidden block bg-indigo-600 text-white md:my-0 my-7 py-2 px-6 rounded hover:bg-indigo-400 duration-500 border-none text-xl'>FIND A TABLE</button> 
+                  <button onClick={()=>setShowMyModel(true)} className=' md:hidden block bg-indigo-600 text-white md:my-0 my-7 py-2 px-6 rounded hover:bg-indigo-400 duration-500 border-none text-xl'>FIND A TABLE</button> 
               </ul>
-              <button className='lg:mr-0 mr-10 md:block hidden bg-indigo-600 text-white py-2 px-6 rounded hover:bg-indigo-400 duration-500 border-none text-xl'>FIND A TABLE</button>
+              <button onClick={()=>setShowMyModel(true)} className='lg:mr-0 mr-10 md:block hidden bg-indigo-600 text-white py-2 px-6 rounded hover:bg-indigo-400 duration-500 border-none text-xl'>FIND A TABLE</button>
       </div>
               
               
-              
-              </div>
+        </div>
+<PopupModal visible={showMyModel} onClose={handleOnClose}/>
       
           
          
     </FlipProvider>
-   
-   
 
-
-
-
-// <FlipProvider>
-// <div className="main" data-flip-root-id={flipRootId} >
-//   <div className="flex">
-//     {NavLinks?.map((item, id) => {
-//       return (
-//         <div
-//           onClick={() => selectedTabHandler(item.id)}
-//           className="flex-col"
-//           key={id}
-//         >
-//           {item.text}
-
-//           {selectedTab === item.id ? (
-//             <div className="active-tab" data-flip-id="highlight" />
-//           ) : (
-//             <div className="non-active-tab" />
-//           )}
-//         </div>
-//       );
-//     })}
-//   </div>
-// </div>
-// </FlipProvider>
   )
 }
 

@@ -6,6 +6,7 @@ import MenuSec from '../Menu/MenuSec';
 import OurServiceSec from '../OurServiceSec/OurServiceSec';
 import Query from '../QuerySec/Query';
 
+
 function Home() {
 
   const slides = [
@@ -26,6 +27,7 @@ function Home() {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
@@ -75,10 +77,10 @@ function Home() {
       
     </div>
     <AboutSec/>
-
     <MenuSec />
     <OurServiceSec/>
     <Query/>
+
     </>
   );
 
