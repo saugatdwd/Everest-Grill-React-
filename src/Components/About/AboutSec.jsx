@@ -4,7 +4,7 @@ import underline from '../../assets/images/separator.svg'
 function AboutSec() {
   return (
     <>
-    <div className='bg-gray-200 pt-14 md:pt-0 md:pb-0 pb-14'>
+    <div className='bg-gray-200 h-[100vh] pt-14 md:pt-0 md:pb-0 pb-14'>
     <div className="md:min-h-screen  max-w-[90vw] mx-auto flex flex-col-reverse md:flex-row items-center gap-y-5
      ">
     <div className='w-full md:w-2/4'>
