@@ -7,14 +7,15 @@ import eventAndPartyImage from '../../assets/images/event-and-party.png'
 
 function OurServiceSec() {
   return (
-    <div className="bg-[#161718] md:py-5">
-    <div className='text-center py-4 mb-4 flex flex-col justify-center items-center text-[#E3C48E]'>
+    // <div className="bg - [#161718] bg-blue-100 md:py-5">
+    <div className="md:py-5 bg-gradient-to-br from-gray-200 to-blue-200">
+    <div className='text-center py-4 mb-4 flex flex-col justify-center items-center text-black text-xl'>
         <p>Why Choose Us</p>
         <div className="text-center mx-auto w-40 h-5">
             <img src={separator} alt="Seperator" />
         </div>
     </div>
-    <div className="text-center font-satisfy text-6xl text-white">
+    <div className="text-center font-satisfy text-6xl text-black">
             Our Strength
     </div>
 
@@ -23,7 +24,7 @@ function OurServiceSec() {
 <div className='flex md:flex-row flex-col gap-4 justify-evenly mx-16 mt-8'>
 
 
-<div className="w-[1/4] border border-none rounded-lg shadow ">
+<div className="w-[1/4] border border-none rounded-lg shadow-md  hover:scale-110 duration-200 ">
 
     <div className="flex justify-center">
         <img className="rounded-t-lg" src={hygenicFoodImage} alt="" />
@@ -36,7 +37,7 @@ function OurServiceSec() {
 
 
 
-<div className="w-[1/4] border border-none rounded-lg shadow ">
+<div className="w-[1/4] border border-none rounded-lg shadow-xl  hover:scale-110 duration-200">
 
     <div className="flex justify-center">
         <img className="rounded-t-lg" src={freshEnvironmentImage} alt="" />
@@ -49,7 +50,7 @@ function OurServiceSec() {
 
 
 
-<div className="w-[1/4] border border-none rounded-lg shadow ">
+<div className="w-[1/4] border border-none rounded-lg shadow-md hover:scale-110 duration-200">
 
     <div className="flex justify-center">
 
@@ -63,7 +64,7 @@ function OurServiceSec() {
 
 
 
-<div className="w-[1/4]  border border-none rounded-lg shadow ">
+<div className="w-[1/4]  border border-none rounded-lg shadow-xl  hover:scale-110 duration-200">
 
     <div className="flex justify-center">
         <img className="rounded-t-lg" src={eventAndPartyImage} alt="" />
