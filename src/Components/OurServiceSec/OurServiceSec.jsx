@@ -7,7 +7,7 @@ import eventAndPartyImage from '../../assets/images/event-and-party.png'
 
 function OurServiceSec() {
   return (
-    <div className="bg-[#161718]">
+    <div className="bg-[#161718] md:py-5">
     <div className='text-center py-4 mb-4 flex flex-col justify-center items-center text-[#E3C48E]'>
         <p>Why Choose Us</p>
         <div className="text-center mx-auto w-40 h-5">
@@ -36,7 +36,7 @@ function OurServiceSec() {
 
 
 
-<div className="w-[1/4] bg-[#121111] border border-none rounded-lg shadow ">
+<div className="w-[1/4] border border-none rounded-lg shadow ">
 
     <div className="flex justify-center">
         <img className="rounded-t-lg" src={freshEnvironmentImage} alt="" />
@@ -63,7 +63,7 @@ function OurServiceSec() {
 
 
 
-<div className="w-[1/4] bg-[#121111] border border-none rounded-lg shadow ">
+<div className="w-[1/4]  border border-none rounded-lg shadow ">
 
     <div className="flex justify-center">
         <img className="rounded-t-lg" src={eventAndPartyImage} alt="" />

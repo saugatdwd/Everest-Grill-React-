@@ -4,6 +4,7 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import AboutSec from '../About/AboutSec';
 import MenuSec from '../Menu/MenuSec';
 import OurServiceSec from '../OurServiceSec/OurServiceSec';
+import PopupModal from '../Registration/PopupModal';
 
 function Home() {
 
@@ -25,6 +26,7 @@ function Home() {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
@@ -53,7 +55,7 @@ function Home() {
     <>
   
 
-    <div className="max-w-full h-[780px] w-full m-auto relative group">
+    <div className="max-w-full h-[100vh] w-full m-auto relative group">
 
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
@@ -74,9 +76,9 @@ function Home() {
       
     </div>
     <AboutSec/>
-
     <MenuSec />
     <OurServiceSec/>
+    
     </>
   );
 
