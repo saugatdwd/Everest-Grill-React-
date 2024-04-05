@@ -4,7 +4,7 @@ import image from "../../assets/images/about-banner.jpg";
 
 function AboutPage() {
   return (
-    <>
+    <div className="mainAboutPage" id="mainAboutPage">
       <div
         className="bg-fixed h-96 flex items-center justify-center"
         style={{ backgroundImage: `url(${menubackground})` }}
@@ -39,15 +39,15 @@ function AboutPage() {
 
 
 
-<div className="flex text-center justify-center my-4">
+<div className="flex text-center justify-center my-4 mx-16">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.40988057884!2d85.3165884756918!3d27.735501024248705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19f06c125c4b%3A0x28e589ddc882af98!2sThe%20Everest%20Grill!5e0!3m2!1sen!2snp!4v1712297643865!5m2!1sen!2snp" 
-      width="1500" 
+      width="100%" 
       height="450" 
       allowFullScreen="" 
       loading="lazy" 
       referrerPolicy="no-referrer-when-downgrade"></iframe>
 </div>
-    </>
+    </div>
   );
 }
 
