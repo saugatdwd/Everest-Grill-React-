@@ -14,13 +14,13 @@ function AboutPage() {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 grid-cols-1">
+      <div className="grid md:grid-cols-2 grid-cols-1 px-16">
         <div className=" content-center px-4 py-8">
           <img src={image} alt="" />
         </div>
-        <div>
+        <div className="p">
           <div className="text-8xl font-satisfy px-4 py-8">Everest Grill</div>
-          <div className="text-md">
+          <div className="text-md font-normal">
             Jimbu Thakali is a traditional Thakali Restaurant named after
             Himalayan herb called jimbu. Thakali Khana Set (meal) is widely
             celebrated in Nepal because of it’s irresistible taste and variety
@@ -36,6 +36,17 @@ function AboutPage() {
           </div>
         </div>
       </div>
+
+
+
+<div className="flex text-center justify-center my-4">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.40988057884!2d85.3165884756918!3d27.735501024248705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19f06c125c4b%3A0x28e589ddc882af98!2sThe%20Everest%20Grill!5e0!3m2!1sen!2snp!4v1712297643865!5m2!1sen!2snp" 
+      width="1500" 
+      height="450" 
+      allowFullScreen="" 
+      loading="lazy" 
+      referrerPolicy="no-referrer-when-downgrade"></iframe>
+</div>
     </>
   );
 }
